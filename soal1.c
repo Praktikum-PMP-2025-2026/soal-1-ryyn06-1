@@ -83,7 +83,6 @@ int main(){
         printf("%s %s %d %d\n", Artefak[i].nama,Artefak[i].kategori, Artefak[i].tahun, Artefak[i].nilai);
     }
 
-    free(Artefak);
     return 0;
 
 }
