@@ -27,9 +27,6 @@ int compare(const void *a, const void *b) {
 
     if (p1->kategori != p2->kategori) {
         return strcmp(p1->kategori, p2->kategori);}
-
-    if (p1->nama != p2->nama) {
-        return strcmp(p1->nama, p2->nama);}
     
     if (p1->tahun != p2->tahun) {
         return p1->tahun - p2->tahun;
@@ -76,7 +73,7 @@ int main(){
 
     }
 
-    qsort(Artefak,jumlah_artefak, sizeof(Arsip), compare);
+    qsort(Artefak, jumlah_artefak, sizeof(Arsip), compare);
 
     for (size_t i = 0; i < jumlah_artefak; i++)
     {
